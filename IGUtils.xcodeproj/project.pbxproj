@@ -22,6 +22,9 @@
 		54FA442413A765C600EB65C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54FA442213A765C600EB65C6 /* InfoPlist.strings */; };
 		54FA442713A765C600EB65C6 /* IGUtilsTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 54FA442613A765C600EB65C6 /* IGUtilsTests.h */; };
 		54FA442913A765C600EB65C6 /* IGUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FA442813A765C600EB65C6 /* IGUtilsTests.m */; };
+		54FA443B13A7663B00EB65C6 /* UIToolbar+Background.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FA443413A7663B00EB65C6 /* UIToolbar+Background.m */; };
+		54FA443E13A7663B00EB65C6 /* UIViewController+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FA443A13A7663B00EB65C6 /* UIViewController+Toast.m */; };
+		54FA444413A7673B00EB65C6 /* CBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FA444313A7673B00EB65C6 /* CBorderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +42,28 @@
 		54FA43F913A765C500EB65C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54FA43FB13A765C500EB65C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54FA43FD13A765C500EB65C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		54FA440113A765C500EB65C6 /* IGUtils-Info.plist */ = {isa = PBXFileReference; path = "IGUtils-Info.plist"; sourceTree = "<group>"; };
+		54FA440113A765C500EB65C6 /* IGUtils-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGUtils-Info.plist"; sourceTree = "<group>"; };
 		54FA440313A765C500EB65C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		54FA440513A765C500EB65C6 /* IGUtils-Prefix.pch */ = {isa = PBXFileReference; path = "IGUtils-Prefix.pch"; sourceTree = "<group>"; };
+		54FA440513A765C500EB65C6 /* IGUtils-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IGUtils-Prefix.pch"; sourceTree = "<group>"; };
 		54FA440613A765C500EB65C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		54FA440813A765C500EB65C6 /* IGUtilsAppDelegate.h */ = {isa = PBXFileReference; path = IGUtilsAppDelegate.h; sourceTree = "<group>"; };
+		54FA440813A765C500EB65C6 /* IGUtilsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGUtilsAppDelegate.h; sourceTree = "<group>"; };
 		54FA440913A765C500EB65C6 /* IGUtilsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGUtilsAppDelegate.m; sourceTree = "<group>"; };
 		54FA440C13A765C500EB65C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		54FA440E13A765C500EB65C6 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		54FA440E13A765C500EB65C6 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		54FA440F13A765C500EB65C6 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		54FA441213A765C500EB65C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		54FA441913A765C600EB65C6 /* IGUtilsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGUtilsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		54FA442113A765C600EB65C6 /* IGUtilsTests-Info.plist */ = {isa = PBXFileReference; path = "IGUtilsTests-Info.plist"; sourceTree = "<group>"; };
+		54FA442113A765C600EB65C6 /* IGUtilsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGUtilsTests-Info.plist"; sourceTree = "<group>"; };
 		54FA442313A765C600EB65C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		54FA442513A765C600EB65C6 /* IGUtilsTests-Prefix.pch */ = {isa = PBXFileReference; path = "IGUtilsTests-Prefix.pch"; sourceTree = "<group>"; };
+		54FA442513A765C600EB65C6 /* IGUtilsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IGUtilsTests-Prefix.pch"; sourceTree = "<group>"; };
 		54FA442613A765C600EB65C6 /* IGUtilsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGUtilsTests.h; sourceTree = "<group>"; };
 		54FA442813A765C600EB65C6 /* IGUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGUtilsTests.m; sourceTree = "<group>"; };
+		54FA443313A7663B00EB65C6 /* UIToolbar+Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIToolbar+Background.h"; path = "ViewController/UIToolbar+Background.h"; sourceTree = "<group>"; };
+		54FA443413A7663B00EB65C6 /* UIToolbar+Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIToolbar+Background.m"; path = "ViewController/UIToolbar+Background.m"; sourceTree = "<group>"; };
+		54FA443913A7663B00EB65C6 /* UIViewController+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Toast.h"; path = "ViewController/UIViewController+Toast.h"; sourceTree = "<group>"; };
+		54FA443A13A7663B00EB65C6 /* UIViewController+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Toast.m"; path = "ViewController/UIViewController+Toast.m"; sourceTree = "<group>"; };
+		54FA444213A7673B00EB65C6 /* CBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBorderView.h; path = Dependencies/touchcode/CBorderView.h; sourceTree = "<group>"; };
+		54FA444313A7673B00EB65C6 /* CBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBorderView.m; path = Dependencies/touchcode/CBorderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,12 +122,9 @@
 		54FA43FF13A765C500EB65C6 /* IGUtils */ = {
 			isa = PBXGroup;
 			children = (
-				54FA440813A765C500EB65C6 /* IGUtilsAppDelegate.h */,
-				54FA440913A765C500EB65C6 /* IGUtilsAppDelegate.m */,
-				54FA440B13A765C500EB65C6 /* MainWindow.xib */,
-				54FA440E13A765C500EB65C6 /* RootViewController.h */,
-				54FA440F13A765C500EB65C6 /* RootViewController.m */,
-				54FA441113A765C500EB65C6 /* RootViewController.xib */,
+				54FA444013A766E600EB65C6 /* Dependencies */,
+				54FA443F13A7663F00EB65C6 /* Sample Project */,
+				54FA443213A765CD00EB65C6 /* ViewController */,
 				54FA440013A765C500EB65C6 /* Supporting Files */,
 			);
 			path = IGUtils;
@@ -153,6 +159,47 @@
 				54FA442513A765C600EB65C6 /* IGUtilsTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54FA443213A765CD00EB65C6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				54FA443313A7663B00EB65C6 /* UIToolbar+Background.h */,
+				54FA443413A7663B00EB65C6 /* UIToolbar+Background.m */,
+				54FA443913A7663B00EB65C6 /* UIViewController+Toast.h */,
+				54FA443A13A7663B00EB65C6 /* UIViewController+Toast.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		54FA443F13A7663F00EB65C6 /* Sample Project */ = {
+			isa = PBXGroup;
+			children = (
+				54FA440813A765C500EB65C6 /* IGUtilsAppDelegate.h */,
+				54FA440913A765C500EB65C6 /* IGUtilsAppDelegate.m */,
+				54FA440B13A765C500EB65C6 /* MainWindow.xib */,
+				54FA440E13A765C500EB65C6 /* RootViewController.h */,
+				54FA440F13A765C500EB65C6 /* RootViewController.m */,
+				54FA441113A765C500EB65C6 /* RootViewController.xib */,
+			);
+			name = "Sample Project";
+			sourceTree = "<group>";
+		};
+		54FA444013A766E600EB65C6 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				54FA444113A766F600EB65C6 /* touchcode */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		54FA444113A766F600EB65C6 /* touchcode */ = {
+			isa = PBXGroup;
+			children = (
+				54FA444213A7673B00EB65C6 /* CBorderView.h */,
+				54FA444313A7673B00EB65C6 /* CBorderView.m */,
+			);
+			name = touchcode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +313,9 @@
 				54FA440713A765C500EB65C6 /* main.m in Sources */,
 				54FA440A13A765C500EB65C6 /* IGUtilsAppDelegate.m in Sources */,
 				54FA441013A765C500EB65C6 /* RootViewController.m in Sources */,
+				54FA443B13A7663B00EB65C6 /* UIToolbar+Background.m in Sources */,
+				54FA443E13A7663B00EB65C6 /* UIViewController+Toast.m in Sources */,
+				54FA444413A7673B00EB65C6 /* CBorderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

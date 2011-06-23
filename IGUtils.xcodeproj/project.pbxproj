@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54A2227713B2E32900B0BA7A /* IGProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A2227613B2E32900B0BA7A /* IGProgressView.m */; };
 		54FA43FA13A765C500EB65C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FA43F913A765C500EB65C6 /* UIKit.framework */; };
 		54FA43FC13A765C500EB65C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FA43FB13A765C500EB65C6 /* Foundation.framework */; };
 		54FA43FE13A765C500EB65C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FA43FD13A765C500EB65C6 /* CoreGraphics.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54A2227513B2E32900B0BA7A /* IGProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGProgressView.h; path = View/IGProgressView.h; sourceTree = "<group>"; };
+		54A2227613B2E32900B0BA7A /* IGProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGProgressView.m; path = View/IGProgressView.m; sourceTree = "<group>"; };
 		54FA43F513A765C500EB65C6 /* IGUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FA43F913A765C500EB65C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54FA43FB13A765C500EB65C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54A2227313B2E31E00B0BA7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54A2227513B2E32900B0BA7A /* IGProgressView.h */,
+				54A2227613B2E32900B0BA7A /* IGProgressView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		54FA43EA13A765C500EB65C6 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +137,7 @@
 				54FA444013A766E600EB65C6 /* Dependencies */,
 				54FA443F13A7663F00EB65C6 /* Sample Project */,
 				54FA443213A765CD00EB65C6 /* ViewController */,
+				54A2227313B2E31E00B0BA7A /* View */,
 				54FA440013A765C500EB65C6 /* Supporting Files */,
 			);
 			path = IGUtils;
@@ -316,6 +329,7 @@
 				54FA443B13A7663B00EB65C6 /* UIToolbar+Background.m in Sources */,
 				54FA443E13A7663B00EB65C6 /* UIViewController+Toast.m in Sources */,
 				54FA444413A7673B00EB65C6 /* CBorderView.m in Sources */,
+				54A2227713B2E32900B0BA7A /* IGProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +510,7 @@
 				54FA442E13A765C600EB65C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54FA442F13A765C600EB65C6 /* Build configuration list for PBXNativeTarget "IGUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +519,7 @@
 				54FA443113A765C600EB65C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,4 +10,7 @@
 
 @interface IGGradientView : UIView
 
+- (id)initWithFrame:(CGRect)frame withGradientFromColor:(UIColor*)color1 toColor:(UIColor*)color2;
+- (void)setGradientFromColor:(UIColor*)color1 toColor:(UIColor*)color2;
+
 @end

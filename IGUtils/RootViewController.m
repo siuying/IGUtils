@@ -7,6 +7,8 @@
 //
 
 #import "RootViewController.h"
+
+#import "IGClearLabelsCellView.h"
 #import "IGGradientView.h"
 
 @implementation RootViewController
@@ -34,7 +36,13 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[IGClearLabelsCellView alloc] initWithStyle:UITableViewCellStyleDefault 
+                                             reuseIdentifier:CellIdentifier] autorelease];
+        
+        IGGradientView* gradientView = [[[IGGradientView alloc] init] autorelease];
+        cell.backgroundView = gradientView;
+        [gradientView setGradientFromColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] 
+                                   toColor:[UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1.0]];
     }
 
 	cell.textLabel.text = [NSString stringWithFormat:@"Some text for row %ld", indexPath.row + 1];

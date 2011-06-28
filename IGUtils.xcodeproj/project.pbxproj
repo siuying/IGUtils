@@ -12,6 +12,7 @@
 		54C15AF513BA085B0069B540 /* IGGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C15AF413BA085B0069B540 /* IGGradientView.m */; };
 		54C15AFD13BA0B5E0069B540 /* IGShadowedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C15AFC13BA0B5E0069B540 /* IGShadowedTableView.m */; };
 		54C15B0413BA15980069B540 /* IGClearLabelsCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C15B0313BA15970069B540 /* IGClearLabelsCellView.m */; };
+		54C15BA213BA1F610069B540 /* IGLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C15BA113BA1F610069B540 /* IGLoadingView.m */; };
 		54FA43FA13A765C500EB65C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FA43F913A765C500EB65C6 /* UIKit.framework */; };
 		54FA43FC13A765C500EB65C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FA43FB13A765C500EB65C6 /* Foundation.framework */; };
 		54FA43FE13A765C500EB65C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FA43FD13A765C500EB65C6 /* CoreGraphics.framework */; };
@@ -50,8 +51,10 @@
 		54C15AF413BA085B0069B540 /* IGGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGGradientView.m; path = View/IGGradientView.m; sourceTree = "<group>"; };
 		54C15AFB13BA0B5E0069B540 /* IGShadowedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGShadowedTableView.h; path = View/IGShadowedTableView.h; sourceTree = "<group>"; };
 		54C15AFC13BA0B5E0069B540 /* IGShadowedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGShadowedTableView.m; path = View/IGShadowedTableView.m; sourceTree = "<group>"; };
-		54C15B0213BA15970069B540 /* IGClearLabelsCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; name = IGClearLabelsCellView.h; path = View/IGClearLabelsCellView.h; sourceTree = "<group>"; };
+		54C15B0213BA15970069B540 /* IGClearLabelsCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGClearLabelsCellView.h; path = View/IGClearLabelsCellView.h; sourceTree = "<group>"; };
 		54C15B0313BA15970069B540 /* IGClearLabelsCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGClearLabelsCellView.m; path = View/IGClearLabelsCellView.m; sourceTree = "<group>"; };
+		54C15BA013BA1F610069B540 /* IGLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGLoadingView.h; path = View/IGLoadingView.h; sourceTree = "<group>"; };
+		54C15BA113BA1F610069B540 /* IGLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGLoadingView.m; path = View/IGLoadingView.m; sourceTree = "<group>"; };
 		54FA43F513A765C500EB65C6 /* IGUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FA43F913A765C500EB65C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54FA43FB13A765C500EB65C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,6 +113,8 @@
 			children = (
 				54A2227513B2E32900B0BA7A /* IGProgressView.h */,
 				54A2227613B2E32900B0BA7A /* IGProgressView.m */,
+				54C15BA013BA1F610069B540 /* IGLoadingView.h */,
+				54C15BA113BA1F610069B540 /* IGLoadingView.m */,
 				54C15AF313BA085B0069B540 /* IGGradientView.h */,
 				54C15AF413BA085B0069B540 /* IGGradientView.m */,
 				54C15AFB13BA0B5E0069B540 /* IGShadowedTableView.h */,
@@ -352,6 +357,7 @@
 				54C15AF513BA085B0069B540 /* IGGradientView.m in Sources */,
 				54C15AFD13BA0B5E0069B540 /* IGShadowedTableView.m in Sources */,
 				54C15B0413BA15980069B540 /* IGClearLabelsCellView.m in Sources */,
+				54C15BA213BA1F610069B540 /* IGLoadingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

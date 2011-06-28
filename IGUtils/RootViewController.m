@@ -7,12 +7,15 @@
 //
 
 #import "RootViewController.h"
+#import "IGGradientView.h"
 
 @implementation RootViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.tableView.backgroundView = [[[IGGradientView alloc] initWithFrame:self.tableView.frame] autorelease];
 }
 
 - (void)viewWillAppear:(BOOL)animated

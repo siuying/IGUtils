@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		54A2227713B2E32900B0BA7A /* IGProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A2227613B2E32900B0BA7A /* IGProgressView.m */; };
+		54C15AF213BA08410069B540 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C15AF113BA08410069B540 /* QuartzCore.framework */; };
+		54C15AF513BA085B0069B540 /* IGGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C15AF413BA085B0069B540 /* IGGradientView.m */; };
 		54FA43FA13A765C500EB65C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FA43F913A765C500EB65C6 /* UIKit.framework */; };
 		54FA43FC13A765C500EB65C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FA43FB13A765C500EB65C6 /* Foundation.framework */; };
 		54FA43FE13A765C500EB65C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FA43FD13A765C500EB65C6 /* CoreGraphics.framework */; };
@@ -41,6 +43,9 @@
 /* Begin PBXFileReference section */
 		54A2227513B2E32900B0BA7A /* IGProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGProgressView.h; path = View/IGProgressView.h; sourceTree = "<group>"; };
 		54A2227613B2E32900B0BA7A /* IGProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGProgressView.m; path = View/IGProgressView.m; sourceTree = "<group>"; };
+		54C15AF113BA08410069B540 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		54C15AF313BA085B0069B540 /* IGGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGGradientView.h; path = View/IGGradientView.h; sourceTree = "<group>"; };
+		54C15AF413BA085B0069B540 /* IGGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGGradientView.m; path = View/IGGradientView.m; sourceTree = "<group>"; };
 		54FA43F513A765C500EB65C6 /* IGUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FA43F913A765C500EB65C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54FA43FB13A765C500EB65C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C15AF213BA08410069B540 /* QuartzCore.framework in Frameworks */,
 				54FA43FA13A765C500EB65C6 /* UIKit.framework in Frameworks */,
 				54FA43FC13A765C500EB65C6 /* Foundation.framework in Frameworks */,
 				54FA43FE13A765C500EB65C6 /* CoreGraphics.framework in Frameworks */,
@@ -98,6 +104,8 @@
 			children = (
 				54A2227513B2E32900B0BA7A /* IGProgressView.h */,
 				54A2227613B2E32900B0BA7A /* IGProgressView.m */,
+				54C15AF313BA085B0069B540 /* IGGradientView.h */,
+				54C15AF413BA085B0069B540 /* IGGradientView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -124,6 +132,7 @@
 		54FA43F813A765C500EB65C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54C15AF113BA08410069B540 /* QuartzCore.framework */,
 				54FA43F913A765C500EB65C6 /* UIKit.framework */,
 				54FA43FB13A765C500EB65C6 /* Foundation.framework */,
 				54FA43FD13A765C500EB65C6 /* CoreGraphics.framework */,
@@ -135,9 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				54FA444013A766E600EB65C6 /* Dependencies */,
-				54FA443F13A7663F00EB65C6 /* Sample Project */,
 				54FA443213A765CD00EB65C6 /* ViewController */,
 				54A2227313B2E31E00B0BA7A /* View */,
+				54FA443F13A7663F00EB65C6 /* Sample Project */,
 				54FA440013A765C500EB65C6 /* Supporting Files */,
 			);
 			path = IGUtils;
@@ -330,6 +339,7 @@
 				54FA443E13A7663B00EB65C6 /* UIViewController+Toast.m in Sources */,
 				54FA444413A7673B00EB65C6 /* CBorderView.m in Sources */,
 				54A2227713B2E32900B0BA7A /* IGProgressView.m in Sources */,
+				54C15AF513BA085B0069B540 /* IGGradientView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

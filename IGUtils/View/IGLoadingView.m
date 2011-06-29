@@ -21,6 +21,9 @@
         self.lblLoading.text            = NSLocalizedString(@"Loading ...", @"");
         self.lblLoading.numberOfLines   = 1;
         self.lblLoading.backgroundColor = [UIColor clearColor];
+        self.lblLoading.textColor       = [UIColor darkGrayColor];
+        self.lblLoading.shadowColor     = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
+        self.lblLoading.shadowOffset    = CGSizeMake(0, 1);
         [self addSubview:self.lblLoading];
         
         self.actLoading                 = [[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray] autorelease];
@@ -40,7 +43,7 @@
     self.lblLoading.frame = CGRectIntegral(CGRectMake(x, y, 
                                        self.lblLoading.frame.size.width, self.lblLoading.frame.size.height));
     
-    CGFloat actX = self.lblLoading.frame.origin.x - self.actLoading.frame.size.width - 5.0;
+    CGFloat actX = self.lblLoading.frame.origin.x - self.actLoading.frame.size.width - 2.0;
     CGFloat actY = self.lblLoading.frame.origin.y + (self.lblLoading.frame.size.height- self.actLoading.frame.size.height)/2.0;
     self.actLoading.frame = CGRectIntegral(CGRectMake(actX, actY,
                                        self.actLoading.frame.size.width, self.actLoading.frame.size.height));

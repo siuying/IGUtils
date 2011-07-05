@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		547D6AE513C30811005D1ADF /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547D6AE313C30811005D1ADF /* SampleViewController.m */; };
+		547D6AE613C30811005D1ADF /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 547D6AE413C30811005D1ADF /* SampleViewController.xib */; };
+		547D6AEB13C308C5005D1ADF /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547D6AE913C308C4005D1ADF /* SampleTableViewController.m */; };
+		547D6AEC13C308C5005D1ADF /* SampleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 547D6AEA13C308C5005D1ADF /* SampleTableViewController.xib */; };
 		54A2227713B2E32900B0BA7A /* IGProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A2227613B2E32900B0BA7A /* IGProgressView.m */; };
 		54C15AF213BA08410069B540 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C15AF113BA08410069B540 /* QuartzCore.framework */; };
 		54C15AF513BA085B0069B540 /* IGGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C15AF413BA085B0069B540 /* IGGradientView.m */; };
@@ -44,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		547D6AE213C30811005D1ADF /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
+		547D6AE313C30811005D1ADF /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
+		547D6AE413C30811005D1ADF /* SampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
+		547D6AE813C308C4005D1ADF /* SampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewController.h; sourceTree = "<group>"; };
+		547D6AE913C308C4005D1ADF /* SampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewController.m; sourceTree = "<group>"; };
+		547D6AEA13C308C5005D1ADF /* SampleTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableViewController.xib; sourceTree = "<group>"; };
 		54A2227513B2E32900B0BA7A /* IGProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGProgressView.h; path = View/IGProgressView.h; sourceTree = "<group>"; };
 		54A2227613B2E32900B0BA7A /* IGProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGProgressView.m; path = View/IGProgressView.m; sourceTree = "<group>"; };
 		54C15AF113BA08410069B540 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -218,6 +228,12 @@
 				54FA440E13A765C500EB65C6 /* RootViewController.h */,
 				54FA440F13A765C500EB65C6 /* RootViewController.m */,
 				54FA441113A765C500EB65C6 /* RootViewController.xib */,
+				547D6AE213C30811005D1ADF /* SampleViewController.h */,
+				547D6AE313C30811005D1ADF /* SampleViewController.m */,
+				547D6AE413C30811005D1ADF /* SampleViewController.xib */,
+				547D6AE813C308C4005D1ADF /* SampleTableViewController.h */,
+				547D6AE913C308C4005D1ADF /* SampleTableViewController.m */,
+				547D6AEA13C308C5005D1ADF /* SampleTableViewController.xib */,
 			);
 			name = "Sample Project";
 			sourceTree = "<group>";
@@ -312,6 +328,8 @@
 				54FA440413A765C500EB65C6 /* InfoPlist.strings in Resources */,
 				54FA440D13A765C500EB65C6 /* MainWindow.xib in Resources */,
 				54FA441313A765C500EB65C6 /* RootViewController.xib in Resources */,
+				547D6AE613C30811005D1ADF /* SampleViewController.xib in Resources */,
+				547D6AEC13C308C5005D1ADF /* SampleTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +376,8 @@
 				54C15AFD13BA0B5E0069B540 /* IGShadowedTableView.m in Sources */,
 				54C15B0413BA15980069B540 /* IGClearLabelsCellView.m in Sources */,
 				54C15BA213BA1F610069B540 /* IGLoadingView.m in Sources */,
+				547D6AE513C30811005D1ADF /* SampleViewController.m in Sources */,
+				547D6AEB13C308C5005D1ADF /* SampleTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UITableViewController {
+@interface RootViewController : UIViewController {
 
 }
 
+@property (nonatomic, retain) IBOutlet UIButton* btnCustomView;
+@property (nonatomic, retain) IBOutlet UIButton* btnShadowTable;
+
+-(IBAction) showCustomViewController;
+-(IBAction) showShadowTableViewController;
 
 @end

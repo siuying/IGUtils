@@ -1,3 +1,4 @@
+
 //
 //  IGTagsView.m
 //  IGUtils
@@ -8,6 +9,16 @@
 
 #import "IGTagsView.h"
 #import <QuartzCore/QuartzCore.h>
+
+@interface UIFont (IGCategory)
+- (CGFloat)igLineHeight;
+@end
+
+@implementation UIFont (IGCategory)
+- (CGFloat)igLineHeight {
+    return (self.ascender - self.descender) + 1;
+}
+@end
 
 
 @implementation IGTagsView
@@ -70,7 +81,7 @@
         container.backgroundColor = self.tagBackgroundColor;
         
         UILabel* label = [[[UILabel alloc] initWithFrame:CGRectMake(self.hPadding, self.vPadding, 
-                                                                    0, self.frame.size.height-2*self.vPadding)] autorelease];
+                                                                    0, self.font.igLineHeight)] autorelease];
         label.numberOfLines = 1;
         label.font = self.font;
         label.textColor = self.textColor;

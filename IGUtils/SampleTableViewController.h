@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "IGShadowedTableView.h"
+#import "IGClearLabelsCellView.h"
+#import "IGGradientView.h"
 
 @interface SampleTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
     

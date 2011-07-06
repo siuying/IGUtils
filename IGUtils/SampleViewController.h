@@ -8,11 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "IGProgressView.h"
+#import "IGLoadingView.h"
+#import "IGGradientView.h"
 
 @interface SampleViewController : UIViewController {
     
 }
 
 @property (nonatomic, retain) IBOutlet IGProgressView* progress;
+@property (nonatomic, retain) IBOutlet IGGradientView* gradView;
+@property (nonatomic, retain) IBOutlet IGLoadingView* loadingView;
+
+-(IBAction) showLoading:(id)sender;
+-(void) hideLoading;
 
 @end

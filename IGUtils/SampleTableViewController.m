@@ -7,29 +7,16 @@
 //
 
 #import "SampleTableViewController.h"
-#import "IGClearLabelsCellView.h"
-#import "IGGradientView.h"
 
 @implementation SampleTableViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)dealloc
-{
-    [super dealloc];
-}
 
 -(void) loadView {
     [super loadView];
     
-    self.navigationItem.title = @"IGShadowedTableView";    
+    self.tableView = [[IGShadowedTableView alloc] initWithFrame:self.view.frame];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+
     UIBarButtonItem* item = [[[UIBarButtonItem alloc] initWithTitle:@"Done" 
                                                               style:UIBarButtonItemStyleDone 
                                                              target:self 
@@ -41,7 +28,7 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
-#pragma mark - UITableViewDelegate, UITableViewDataSource
+#pragma mark - UITableViewDataSource
 
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -75,6 +62,8 @@
     // Configure the cell.
     return cell;
 }
+
+#pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

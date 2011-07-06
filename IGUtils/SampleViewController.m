@@ -8,10 +8,9 @@
 
 #import "SampleViewController.h"
 
-
 @implementation SampleViewController
 
-@synthesize progress;
+@synthesize progress, loadingView, gradView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,6 +23,9 @@
 
 - (void)dealloc
 {
+    self.progress = nil;
+    self.loadingView=  nil;
+    self.gradView = nil;
     [super dealloc];
 }
 
@@ -32,9 +34,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [progress setColor:[UIColor blackColor]];
+    [progress setWidth:4.0];
+    [progress setRadius:10.0];
+    [progress setColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:1]];
     [progress setProgress:0.5];
+    [progress setNeedsDisplay];
     
+    [gradView setGradientFromColor:[UIColor blackColor] toColor:[UIColor blueColor]];
+
     self.navigationItem.title = @"Custom Views";    
     UIBarButtonItem* item = [[[UIBarButtonItem alloc] initWithTitle:@"Done" 
                                                               style:UIBarButtonItemStyleDone 
@@ -59,4 +66,20 @@
 -(void) done:(id)sender {
     [self dismissModalViewControllerAnimated:YES];
 }
+
+-(IBAction) showLoading:(id)sender {
+    if (!self.loadingView) {
+        self.loadingView = [[IGLoadingView alloc] initWithFrame:self.view.frame];
+    }
+    [self.view addSubview:self.loadingView];
+    [self.loadingView layoutSubviews];
+    
+    [self performSelector:@selector(hideLoading) withObject:nil afterDelay:5.0];
+    
+}
+
+-(void) hideLoading {
+    [self.loadingView removeFromSuperview];
+}
+
 @end

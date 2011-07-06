@@ -18,6 +18,7 @@
 @property(nonatomic,retain) UIFont *font; // default font applied to tag UILabel view
 @property(nonatomic,retain) UIColor *textColor; // default text color applied to tag UILabel view
 @property(nonatomic,retain) UIColor *tagBackgroundColor; // default background color applied to tag UILabel view
+@property(nonatomic,retain) UIColor *tagHighlightedTextColor;
 
 @property(nonatomic,assign) NSInteger cornerRadius; // corner raduis of tags
 @property(nonatomic,assign) NSInteger vPadding; // vertical padding on pads label

@@ -45,7 +45,7 @@
     [gradView setGradientFromColor:[UIColor blackColor] toColor:[UIColor blueColor]];
 
     [tagsView setFont:[UIFont systemFontOfSize:14]];
-    [tagsView setTags:[NSArray arrayWithObjects:@"Hello", @"World", @"Foo", @"Bar", nil]];
+    [tagsView setTags:[NSArray arrayWithObjects:@"iOS", @"Software", @"Development", @"Bar", @"hello", @"Explanation", nil]];
 
     self.navigationItem.title = @"Custom Views";    
     UIBarButtonItem* item = [[[UIBarButtonItem alloc] initWithTitle:@"Done" 
@@ -66,10 +66,9 @@
     self.progress = nil;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return YES;
 }
 
 -(void) done:(id)sender {
@@ -90,5 +89,6 @@
 -(void) hideLoading {
     [self.loadingView removeFromSuperview];
 }
+
 
 @end

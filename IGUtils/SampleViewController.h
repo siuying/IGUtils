@@ -10,6 +10,7 @@
 #import "IGProgressView.h"
 #import "IGLoadingView.h"
 #import "IGGradientView.h"
+#import "IGTagsView.h"
 
 @interface SampleViewController : UIViewController {
     
@@ -18,6 +19,7 @@
 @property (nonatomic, retain) IBOutlet IGProgressView* progress;
 @property (nonatomic, retain) IBOutlet IGGradientView* gradView;
 @property (nonatomic, retain) IBOutlet IGLoadingView* loadingView;
+@property (nonatomic, retain) IBOutlet IGTagsView* tagsView;
 
 -(IBAction) showLoading:(id)sender;
 -(void) hideLoading;

@@ -10,6 +10,7 @@
 		547D6AE513C30811005D1ADF /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547D6AE313C30811005D1ADF /* SampleViewController.m */; };
 		547D6AE613C30811005D1ADF /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 547D6AE413C30811005D1ADF /* SampleViewController.xib */; };
 		547D6AEB13C308C5005D1ADF /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547D6AE913C308C4005D1ADF /* SampleTableViewController.m */; };
+		5490455013C45633001241CD /* IGTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5490454F13C45633001241CD /* IGTagsView.m */; };
 		54A2227713B2E32900B0BA7A /* IGProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A2227613B2E32900B0BA7A /* IGProgressView.m */; };
 		54C15AF213BA08410069B540 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C15AF113BA08410069B540 /* QuartzCore.framework */; };
 		54C15AF513BA085B0069B540 /* IGGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C15AF413BA085B0069B540 /* IGGradientView.m */; };
@@ -52,6 +53,8 @@
 		547D6AE413C30811005D1ADF /* SampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
 		547D6AE813C308C4005D1ADF /* SampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewController.h; sourceTree = "<group>"; };
 		547D6AE913C308C4005D1ADF /* SampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewController.m; sourceTree = "<group>"; };
+		5490454E13C45633001241CD /* IGTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGTagsView.h; sourceTree = "<group>"; };
+		5490454F13C45633001241CD /* IGTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGTagsView.m; sourceTree = "<group>"; };
 		54A2227513B2E32900B0BA7A /* IGProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGProgressView.h; path = View/IGProgressView.h; sourceTree = "<group>"; };
 		54A2227613B2E32900B0BA7A /* IGProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGProgressView.m; path = View/IGProgressView.m; sourceTree = "<group>"; };
 		54C15AF113BA08410069B540 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -129,6 +132,8 @@
 				54C15AFC13BA0B5E0069B540 /* IGShadowedTableView.m */,
 				54C15B0213BA15970069B540 /* IGClearLabelsCellView.h */,
 				54C15B0313BA15970069B540 /* IGClearLabelsCellView.m */,
+				5490454E13C45633001241CD /* IGTagsView.h */,
+				5490454F13C45633001241CD /* IGTagsView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 				54C15BA213BA1F610069B540 /* IGLoadingView.m in Sources */,
 				547D6AE513C30811005D1ADF /* SampleViewController.m in Sources */,
 				547D6AEB13C308C5005D1ADF /* SampleTableViewController.m in Sources */,
+				5490455013C45633001241CD /* IGTagsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +479,7 @@
 				GCC_PREFIX_HEADER = "IGUtils/IGUtils-Prefix.pch";
 				INFOPLIST_FILE = "IGUtils/IGUtils-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -486,6 +493,7 @@
 				GCC_PREFIX_HEADER = "IGUtils/IGUtils-Prefix.pch";
 				INFOPLIST_FILE = "IGUtils/IGUtils-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

@@ -7,10 +7,11 @@
 //
 
 #import "SampleViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation SampleViewController
 
-@synthesize progress, loadingView, gradView;
+@synthesize progress, loadingView, gradView, tagsView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +27,7 @@
     self.progress = nil;
     self.loadingView=  nil;
     self.gradView = nil;
+    self.tagsView = nil;
     [super dealloc];
 }
 
@@ -42,12 +44,19 @@
     
     [gradView setGradientFromColor:[UIColor blackColor] toColor:[UIColor blueColor]];
 
+    [tagsView setFont:[UIFont systemFontOfSize:14]];
+    [tagsView setTags:[NSArray arrayWithObjects:@"Hello", @"World", @"Foo", @"Bar", nil]];
+
     self.navigationItem.title = @"Custom Views";    
     UIBarButtonItem* item = [[[UIBarButtonItem alloc] initWithTitle:@"Done" 
                                                               style:UIBarButtonItemStyleDone 
                                                              target:self 
                                                              action:@selector(done:)] autorelease];
     self.navigationItem.rightBarButtonItem = item;
+    
+    UILabel* label = (UILabel*) [self.view viewWithTag:6500];
+    label.layer.cornerRadius = 4;
+
 
 }
 

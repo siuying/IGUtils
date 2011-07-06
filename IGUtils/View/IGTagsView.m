@@ -54,15 +54,15 @@
     [super dealloc];
 }
 
--(void) setTags:(NSMutableArray*)newTags {
+-(void) setTags:(NSArray*)newTags {
     [tags release];
     tags = [newTags retain];
 
     for (UIView* v in self.tagViews) {
         [v removeFromSuperview];
     }
-    [self.tagViews removeAllObjects];
 
+    NSMutableArray* newTagViews = [NSMutableArray array];
     int left = 0;
     for (NSString* tag in tags) {
         UIView* container = [[[UIView alloc] initWithFrame:CGRectZero] autorelease];
@@ -81,12 +81,12 @@
         container.frame = CGRectMake(left, 0, 
                                      label.frame.size.width + self.hPadding*2, label.frame.size.height + self.vPadding*2);
         [self addSubview:container];
-        [self.tagViews addObject:container];
+        [newTagViews addObject:container];
 
         left += container.frame.size.width + self.margin;
 
     }
-
+    self.tagViews = newTagViews;
     [self setNeedsDisplay];
 }
 

@@ -12,8 +12,8 @@
 @interface IGTagsView : UIView {
 }
 
-@property (nonatomic, retain) NSMutableArray* tags; // the tags, array of NSString
-@property (nonatomic, retain) NSMutableArray* tagViews; // the tag views, array of UIView that hold the Tag views
+@property (nonatomic, retain) NSArray* tags; // the tags, array of NSString
+@property (nonatomic, retain) NSArray* tagViews; // the tag views, array of UIView that hold the Tag views
 
 @property(nonatomic,retain) UIFont *font; // default font applied to tag UILabel view
 @property(nonatomic,retain) UIColor *textColor; // default text color applied to tag UILabel view
@@ -24,6 +24,6 @@
 @property(nonatomic,assign) NSInteger hPadding; // horizontal padding on pads label
 @property(nonatomic,assign) NSInteger margin; // margin between each tags
 
--(void) setTags:(NSMutableArray*)tags;
+-(void) setTags:(NSArray*)tags;
 
 @end

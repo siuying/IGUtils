@@ -81,36 +81,56 @@
 	
 	[CATransaction commit];
 	
-	NSArray *indexPathsForVisibleRows = [self indexPathsForVisibleRows];
-	if ([indexPathsForVisibleRows count] == 0) {
-		[topShadow removeFromSuperlayer];
-		[topShadow release];
-		topShadow = nil;
-		[bottomShadow removeFromSuperlayer];
-		[bottomShadow release];
-		bottomShadow = nil;
-		return;
-	}
-	
-	NSIndexPath *firstRow = [indexPathsForVisibleRows objectAtIndex:0];
-	if ([firstRow section] == 0 && [firstRow row] == 0) {
-		UIView *cell = [self cellForRowAtIndexPath:firstRow];
-		if (!topShadow) {
-			topShadow = [[self shadowAsInverse:YES] retain];
-			[cell.layer insertSublayer:topShadow atIndex:0];
-		} else if ([cell.layer.sublayers indexOfObjectIdenticalTo:topShadow] != 0) {
-			[cell.layer insertSublayer:topShadow atIndex:0];
-		}
+    if (self.tableHeaderView) {
+        UIView *cell = [self tableHeaderView];
+        if (!topShadow) {
+            topShadow = [[self shadowAsInverse:YES] retain];
+            [cell.layer insertSublayer:topShadow atIndex:0];
+        } else if ([cell.layer.sublayers indexOfObjectIdenticalTo:topShadow] != 0) {
+            [cell.layer insertSublayer:topShadow atIndex:0];
+        }
         
-		CGRect shadowFrame = topShadow.frame;
-		shadowFrame.size.width = cell.frame.size.width;
-		shadowFrame.origin.y = -SHADOW_INVERSE_HEIGHT;
-		topShadow.frame = shadowFrame;
-	} else {
-		[topShadow removeFromSuperlayer];
-		[topShadow release];
-		topShadow = nil;
-	}
+        CGRect shadowFrame = topShadow.frame;
+        shadowFrame.size.width = cell.frame.size.width;
+        shadowFrame.origin.y = -SHADOW_INVERSE_HEIGHT;
+        topShadow.frame = shadowFrame;
+    } else {
+        NSArray *indexPathsForVisibleRows = [self indexPathsForVisibleRows];
+        if ([indexPathsForVisibleRows count] == 0) {
+            [topShadow removeFromSuperlayer];
+            [topShadow release];
+            topShadow = nil;
+            return;
+        }
+        
+        NSIndexPath *firstRow = [indexPathsForVisibleRows objectAtIndex:0];
+        if ([firstRow section] == 0 && [firstRow row] == 0) {
+            UIView *cell = [self cellForRowAtIndexPath:firstRow];
+            if (!topShadow) {
+                topShadow = [[self shadowAsInverse:YES] retain];
+                [cell.layer insertSublayer:topShadow atIndex:0];
+            } else if ([cell.layer.sublayers indexOfObjectIdenticalTo:topShadow] != 0) {
+                [cell.layer insertSublayer:topShadow atIndex:0];
+            }
+            
+            CGRect shadowFrame = topShadow.frame;
+            shadowFrame.size.width = cell.frame.size.width;
+            shadowFrame.origin.y = -SHADOW_INVERSE_HEIGHT;
+            topShadow.frame = shadowFrame;
+        } else {
+            [topShadow removeFromSuperlayer];
+            [topShadow release];
+            topShadow = nil;
+        }
+    }
+
+    NSArray *indexPathsForVisibleRows = [self indexPathsForVisibleRows];
+    if ([indexPathsForVisibleRows count] == 0) {
+        [bottomShadow removeFromSuperlayer];
+        [bottomShadow release];
+        bottomShadow = nil;
+        return;
+    }
     
 	NSIndexPath *lastRow = [indexPathsForVisibleRows lastObject];
 	if ([lastRow section] == [self numberOfSections] - 1 &&
